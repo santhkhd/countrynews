@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="Discover newspapers from around the world with our comprehensive directory. Find top news sources by country."/>
+  <title>Worldwide Newspapers Directory - Global News Sources</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://flagcdn.com/32/gb.png">
+  <style>
+    /* Modern CSS Variables */
+    :root {
+      --primary: #4361ee;
+      --primary-dark: #3a56d4;
+      --secondary: #7209b7;
+      --accent: #4cc9f0;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --gray: #6c757d;
+      --light-gray: #e9ecef;
+      --border-radius: 12px;
+      --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+      --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
+    
+    /* Reset and base styles */
+    * { 
+      box-sizing: border-box; 
+      margin: 0;
+      padding: 0;
+    }
+    
+    html { 
+      scroll-behavior: smooth; 
+    }
+    
+    body { 
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+      min-height: 100vh;
+      font-size: 16px;
+      padding-bottom: 2rem;
+    }
+    
+    /* Header */
+    header {
+      background: white;
+      box-shadow: var(--box-shadow);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      margin-bottom: 2rem;
+    }
+    
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.5rem;
+      background: var(--light);
+      border-radius: 50px;
+      margin: 0.5rem 0;
+    }
+    
+    .nav-links a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 0.5rem 1.5rem;
+      border-radius: 30px;
+      transition: var(--transition);
+      background: transparent;
+    }
+    
+    .nav-links a:hover, .nav-links a.active {
+      background: var(--gradient);
+      color: white;
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+    }
+    
+    .brand h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+      font-weight: 800;
+    }
+    
+    .brand h1 a {
+      text-decoration: none;
+    }
+    
+    .brand p {
+      font-size: 1.1rem;
+      margin: 0;
+      color: var(--gray);
+      font-weight: 400;
+    }
+    
+    /* Search container */
+    .search-container {
+      max-width: 1200px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+    }
+    
+    #countrySearch {
+      width: 100%;
+      padding: 1rem 1.25rem;
+      border-radius: 50px;
+      border: 2px solid var(--light-gray);
+      font-size: 1rem;
+      box-shadow: var(--box-shadow);
+      outline: none;
+      transition: var(--transition);
+      background: white;
+    }
+    
+    #countrySearch:focus {
+      border-color: var(--primary);
+      box-shadow: 0 4px 16px rgba(67, 97, 238, 0.2);
+    }
+    
+    /* Alphabet navigation */
+    .nav-alpha {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding: 1rem 1rem;
+      background: white;
+      scrollbar-width: thin;
+      justify-content: center;
+      flex-wrap: nowrap;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 auto 1.5rem;
+      position: relative;
+      z-index: 10;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      max-width: 1200px;
+    }
+    
+    .nav-alpha::-webkit-scrollbar {
+      height: 6px;
+    }
+    
+    .nav-alpha::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    .nav-alpha::-webkit-scrollbar-thumb {
+      background: #e91e63;
+      border-radius: 3px;
+    }
+    
+    .nav-alpha a {
+      flex: 0 0 auto;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      color: var(--dark);
+      border: none;
+      background: var(--light);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: var(--transition);
+      min-width: 40px;
+      text-align: center;
+      margin: 0;
+    }
+    
+    .nav-alpha a:hover, .nav-alpha a.active {
+      background: var(--gradient);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+    }
+    
+    /* Main content */
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* Sections */
+    .section {
+      margin-bottom: 2rem;
+      padding: 0;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .section h2 {
+      margin: 0 0 1rem 0;
+      font-size: 1.5rem;
+      color: white;
+      background: var(--gradient);
+      padding: 1rem 1.25rem;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+      box-shadow: var(--box-shadow);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      scroll-margin-top: 120px;
+      border-bottom: none;
+    }
+    
+    .section h2:before {
+      content: "";
+      display: none;
+    }
+    
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+      margin: 0;
+      background: white;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    
+    /* Country items */
+    .country {
+      background: white;
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border: none;
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin: 0;
+      font-size: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .country:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border-color: var(--primary);
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    }
+    
+    .country::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    
+    .country:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .country img {
+      width: 48px;
+      height: 36px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex: 0 0 auto;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-left: 0;
+      transition: var(--transition);
+    }
+    
+    .country:hover img {
+      transform: scale(1.1);
+    }
+    
+    .country .name {
+      font-size: 1.1rem;
+      color: var(--dark);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 600;
+      margin-right: 1rem;
+      flex: 1;
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--gray);
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      background: white;
+      margin-top: 3rem;
+      border-top: 1px solid var(--light-gray);
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    
+    .footer-content {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Posts */
+    .post {
+      background: #fff;
+      border: none;
+      padding: 0;
+      margin-bottom: 0;
+      border-radius: 12px;
+      margin: 16px;
+      border-bottom: 1px solid #eee;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    
+    .post-title {
+      margin-top: 0;
+      font-size: 1.5rem;
+      display: none;
+    }
+    
+    .post-title a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    .post-meta {
+      color: #666;
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+    
+    .post-body {
+      margin-bottom: 1rem;
+      padding: 0 16px;
+      font-size: 18px; /* Larger font size */
+    }
+    
+    .post-body h1, .post-body h2, .post-body h3 {
+      color: #e91e63;
+    }
+    
+    /* Navigation */
+    .blog-pager {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem 0;
+      padding: 0 16px;
+    }
+    
+    .pager-newer, .pager-older {
+      padding: 0.75rem 1.25rem;
+      background: #fff;
+      border: 1px solid #ddd;
+      text-decoration: none;
+      color: #0066cc;
+      border-radius: 6px;
+      font-size: 16px; /* Larger font size */
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      body {
+        padding: 0;
+      }
+      
+      header {
+        padding: 1rem 0;
+        border-radius: 0;
+        margin-bottom: 1rem;
+      }
+      
+      .brand {
+        padding: 0.5rem 1rem;
+      }
+      
+      .brand h1 {
+        font-size: 2rem;
+      }
+      
+      .brand p {
+        font-size: 1rem;
+      }
+      
+      .nav-links {
+        gap: 0.5rem;
+        padding: 0.25rem;
+        margin: 0.5rem 1rem;
+      }
+      
+      .nav-links a {
+        padding: 0.5rem 1rem;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 30px;
+      }
+      
+      .search-container {
+        padding: 0 1rem;
+        margin: 0 0 1rem;
+      }
+      
+      #countrySearch {
+        border-radius: 50px;
+      }
+      
+      .nav-alpha {
+        padding: 0.75rem;
+        margin: 0 0 1rem;
+        border-radius: 0;
+        position: relative;
+      }
+      
+      .main-content {
+        padding: 0 0.5rem;
+      }
+      
+      .section {
+        margin-bottom: 1rem;
+      }
+      
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 0.75rem;
+      }
+      
+      .country {
+        padding: 0.75rem;
+        gap: 0.75rem;
+        border-radius: var(--border-radius);
+      }
+      
+      .country img {
+        width: 40px;
+        height: 30px;
+      }
+      
+      .country .name {
+        font-size: 1rem;
+      }
+      
+      .section h2 {
+        font-size: 1.25rem;
+        padding: 0.75rem;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+      }
+      
+      footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.875rem;
+        margin-top: 1.5rem;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .brand h1 {
+        font-size: 1.75rem;
+      }
+      
+      .nav-links {
+        gap: 0.25rem;
+      }
+      
+      .nav-links a {
+        padding: 0.5rem 0.75rem;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 30px;
+      }
+      
+      .nav-alpha a {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+        min-width: 36px;
+        border-radius: 50px;
+      }
+      
+      .section h2 {
+        font-size: 1.1rem;
+        padding: 0.6rem;
+      }
+      
+      .country {
+        padding: 0.6rem;
+      }
+      
+      .country img {
+        width: 36px;
+        height: 27px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1 class="header-title">
+        <a href="/">Worldwide Newspapers Directory</a>
+      </h1>
+      <p>Discover newspapers from around the globe</p>
+    </div>
+    <div class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="/p/about.html">About</a>
+      <a href="/p/contact.html">Contact</a>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="search-container">
+      <input id="countrySearch" placeholder="Search for a country... e.g. Germany, Japan, Brazil" type="text"/>
+    </div>
+    <nav class="nav-alpha" id="alphaNav"></nav>
+    <main id="main-content">
+      <!-- Country sections will be generated by JavaScript -->
+    </main>
+    
+    <script type="text/javascript">
+      const countries = [
+        {name:"Afghanistan", code:"af"},
+        {name:"Albania", code:"al"},
+        {name:"Algeria", code:"dz"},
+        {name:"Andorra", code:"ad"},
+        {name:"Angola", code:"ao"},
+        {name:"Antigua & Barbuda", code:"ag"},
+        {name:"Argentina", code:"ar"},
+        {name:"Armenia", code:"am"},
+        {name:"Aruba", code:"aw"},
+        {name:"Australia", code:"au"},
+        {name:"Austria", code:"at"},
+        {name:"Azerbaijan", code:"az"},
+        {name:"Bahamas", code:"bs"},
+        {name:"Bahrain", code:"bh"},
+        {name:"Bangladesh", code:"bd"},
+        {name:"Barbados", code:"bb"},
+        {name:"Belarus", code:"by"},
+        {name:"Belgium", code:"be"},
+        {name:"Belize", code:"bz"},
+        {name:"Benin", code:"bj"},
+        {name:"Bermuda", code:"bm"},
+        {name:"Bhutan", code:"bt"},
+        {name:"Bolivia", code:"bo"},
+        {name:"Bosnia & Herzegovina", code:"ba"},
+        {name:"Botswana", code:"bw"},
+        {name:"Brazil", code:"br"},
+        {name:"British Virgin Islands", code:"vg"},
+        {name:"Brunei", code:"bn"},
+        {name:"Bulgaria", code:"bg"},
+        {name:"Burkina Faso", code:"bf"},
+        {name:"Burundi", code:"bi"},
+        {name:"Cabo Verde", code:"cv"},
+        {name:"Cambodia", code:"kh"},
+        {name:"Cameroon", code:"cm"},
+        {name:"Canada", code:"ca"},
+        {name:"Central African Republic", code:"cf"},
+        {name:"Chad", code:"td"},
+        {name:"Chile", code:"cl"},
+        {name:"China", code:"cn"},
+        {name:"Colombia", code:"co"},
+        {name:"Comoros", code:"km"},
+        {name:"Congo", code:"cg"},
+        {name:"Cook Islands", code:"ck"},
+        {name:"Costa Rica", code:"cr"},
+        {name:"Croatia", code:"hr"},
+        {name:"Cuba", code:"cu"},
+        {name:"Cyprus", code:"cy"},
+        {name:"Czechia", code:"cz"},
+        {name:"Denmark", code:"dk"},
+        {name:"Djibouti", code:"dj"},
+        {name:"Dominica", code:"dm"},
+        {name:"Dominican Republic", code:"do"},
+        {name:"Ecuador", code:"ec"},
+        {name:"Egypt", code:"eg"},
+        {name:"El Salvador", code:"sv"},
+        {name:"Equatorial Guinea", code:"gq"},
+        {name:"Eritrea", code:"er"},
+        {name:"Estonia", code:"ee"},
+        {name:"Ethiopia", code:"et"},
+        {name:"Fiji", code:"fj"},
+        {name:"Finland", code:"fi"},
+        {name:"France", code:"fr"},
+        {name:"Gabon", code:"ga"},
+        {name:"Gambia", code:"gm"},
+        {name:"Georgia", code:"ge"},
+        {name:"Germany", code:"de"},
+        {name:"Ghana", code:"gh"},
+        {name:"Greece", code:"gr"},
+        {name:"Grenada", code:"gd"},
+        {name:"Guatemala", code:"gt"},
+        {name:"Guinea", code:"gn"},
+        {name:"Guinea Bissau", code:"gw"},
+        {name:"Guyana", code:"gy"},
+        {name:"Haiti", code:"ht"},
+        {name:"Honduras", code:"hn"},
+        {name:"Hong Kong", code:"hk"},
+        {name:"Hungary", code:"hu"},
+        {name:"Iceland", code:"is"},
+        {name:"India", code:"in"},
+        {name:"Indonesia", code:"id"},
+        {name:"Iran", code:"ir"},
+        {name:"Iraq", code:"iq"},
+        {name:"Ireland", code:"ie"},
+        {name:"Israel", code:"il"},
+        {name:"Italy", code:"it"},
+        {name:"Ivory Coast", code:"ci"},
+        {name:"Jamaica", code:"jm"},
+        {name:"Japan", code:"jp"},
+        {name:"Jordan", code:"jo"},
+        {name:"Kazakhstan", code:"kz"},
+        {name:"Kenya", code:"ke"},
+        {name:"Kiribati", code:"ki"},
+        {name:"Kuwait", code:"kw"},
+        {name:"Kyrgyzstan", code:"kg"},
+        {name:"Laos", code:"la"},
+        {name:"Latvia", code:"lv"},
+        {name:"Lebanon", code:"lb"},
+        {name:"Lesotho", code:"ls"},
+        {name:"Liberia", code:"lr"},
+        {name:"Libya", code:"ly"},
+        {name:"Liechtenstein", code:"li"},
+        {name:"Lithuania", code:"lt"},
+        {name:"Luxembourg", code:"lu"},
+        {name:"Macedonia", code:"mk"},
+        {name:"Madagascar", code:"mg"},
+        {name:"Malawi", code:"mw"},
+        {name:"Malaysia", code:"my"},
+        {name:"Maldives", code:"mv"},
+        {name:"Mali", code:"ml"},
+        {name:"Malta", code:"mt"},
+        {name:"Marshall Islands", code:"mh"},
+        {name:"Mauritania", code:"mr"},
+        {name:"Mauritius", code:"mu"},
+        {name:"Mexico", code:"mx"},
+        {name:"Micronesia", code:"fm"},
+        {name:"Moldova", code:"md"},
+        {name:"Monaco", code:"mc"},
+        {name:"Mongolia", code:"mn"},
+        {name:"Montenegro", code:"me"},
+        {name:"Montserrat", code:"ms"},
+        {name:"Morocco", code:"ma"},
+        {name:"Mozambique", code:"mz"},
+        {name:"Myanmar", code:"mm"},
+        {name:"Namibia", code:"na"},
+        {name:"Nauru", code:"nr"},
+        {name:"Nepal", code:"np"},
+        {name:"Netherlands", code:"nl"},
+        {name:"New Zealand", code:"nz"},
+        {name:"Nicaragua", code:"ni"},
+        {name:"Niger", code:"ne"},
+        {name:"Nigeria", code:"ng"},
+        {name:"North Korea", code:"kp"},
+        {name:"Norway", code:"no"},
+        {name:"Oman", code:"om"},
+        {name:"Pakistan", code:"pk"},
+        {name:"Palau", code:"pw"},
+        {name:"Palestine", code:"ps"},
+        {name:"Panama", code:"pa"},
+        {name:"Papua New Guinea", code:"pg"},
+        {name:"Paraguay", code:"py"},
+        {name:"Peru", code:"pe"},
+        {name:"Philippines", code:"ph"},
+        {name:"Poland", code:"pl"},
+        {name:"Portugal", code:"pt"},
+        {name:"Qatar", code:"qa"},
+        {name:"Romania", code:"ro"},
+        {name:"Russia", code:"ru"},
+        {name:"Rwanda", code:"rw"},
+        {name:"Saint Kitts and Nevis", code:"kn"},
+        {name:"Saint Lucia", code:"lc"},
+        {name:"Saint Vincent and the Grenadines", code:"vc"},
+        {name:"Samoa", code:"ws"},
+        {name:"San Marino", code:"sm"},
+        {name:"Sao Tome and Principe", code:"st"},
+        {name:"Saudi Arabia", code:"sa"},
+        {name:"Senegal", code:"sn"},
+        {name:"Serbia", code:"rs"},
+        {name:"Seychelles", code:"sc"},
+        {name:"Sierra Leone", code:"sl"},
+        {name:"Singapore", code:"sg"},
+        {name:"Slovakia", code:"sk"},
+        {name:"Slovenia", code:"si"},
+        {name:"Solomon Islands", code:"sb"},
+        {name:"Somalia", code:"so"},
+        {name:"South Africa", code:"za"},
+        {name:"South Korea", code:"kr"},
+        {name:"South Sudan", code:"ss"},
+        {name:"Spain", code:"es"},
+        {name:"Sri Lanka", code:"lk"},
+        {name:"Sudan", code:"sd"},
+        {name:"Suriname", code:"sr"},
+        {name:"Swaziland", code:"sz"},
+        {name:"Sweden", code:"se"},
+        {name:"Switzerland", code:"ch"},
+        {name:"Syria", code:"sy"},
+        {name:"Taiwan", code:"tw"},
+        {name:"Tajikistan", code:"tj"},
+        {name:"Tanzania", code:"tz"},
+        {name:"Thailand", code:"th"},
+        {name:"Togo", code:"tg"},
+        {name:"Tonga", code:"to"},
+        {name:"Trinidad and Tobago", code:"tt"},
+        {name:"Tunisia", code:"tn"},
+        {name:"Turkey", code:"tr"},
+        {name:"Turkmenistan", code:"tm"},
+        {name:"Tuvalu", code:"tv"},
+        {name:"Uganda", code:"ug"},
+        {name:"Ukraine", code:"ua"},
+        {name:"United Arab Emirates", code:"ae"},
+        {name:"United Kingdom", code:"gb"},
+        {name:"United States", code:"us"},
+        {name:"Uruguay", code:"uy"},
+        {name:"Uzbekistan", code:"uz"},
+        {name:"Vanuatu", code:"vu"},
+        {name:"Vatican City", code:"va"},
+        {name:"Venezuela", code:"ve"},
+        {name:"Vietnam", code:"vn"},
+        {name:"Western Sahara", code:"eh"},
+        {name:"Yemen", code:"ye"},
+        {name:"Zambia", code:"zm"},
+        {name:"Zimbabwe", code:"zw"}
+      ];
+
+      function slugify(name){
+        return name.replace(/&/g,'and')
+          .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+          .replace(/['’]/g,'')
+          .replace(/[^a-zA-Z0-9\s-]/g,'')
+          .trim()
+          .replace(/\s+/g,'-')
+          .toLowerCase();
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Add active class to current nav link
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === window.location.pathname) {
+            link.classList.add('active');
+          }
+        });
+        
+        // Search functionality with debounce
+        const searchInput = document.getElementById('countrySearch');
+        let searchTimeout;
+        
+        searchInput.addEventListener('input', function(e) {
+          clearTimeout(searchTimeout);
+          searchTimeout = setTimeout(() => {
+            const searchTerm = e.target.value.toLowerCase();
+            const allCountries = document.querySelectorAll('.country');
+            const allSections = document.querySelectorAll('.section');
+            
+            if (searchTerm === '') {
+              // Show all sections and countries when search is empty
+              allSections.forEach(section => {
+                section.style.display = 'block';
+                section.style.opacity = '1';
+              });
+              allCountries.forEach(country => {
+                country.style.display = 'flex';
+                country.style.opacity = '1';
+              });
+              // Show alphabet navigation
+              const alphaNav = document.getElementById('alphaNav');
+              alphaNav.style.display = 'flex';
+              alphaNav.style.position = 'relative';
+            } else {
+              // Adjust alphabet navigation during search but don't hide it completely
+              const alphaNav = document.getElementById('alphaNav');
+              alphaNav.style.position = 'relative';
+              alphaNav.style.opacity = '0.5';
+              
+              // Filter countries
+              allCountries.forEach(country => {
+                const countryName = country.querySelector('.name').textContent.toLowerCase();
+                if (countryName.includes(searchTerm)) {
+                  country.style.display = 'flex';
+                  country.style.opacity = '1';
+                  country.closest('.section').style.display = 'block';
+                } else {
+                  country.style.opacity = '0.3';
+                  setTimeout(() => {
+                    if (country.style.opacity === '0.3') {
+                      country.style.display = 'none';
+                    }
+                  }, 300);
+                }
+              });
+              
+              // Hide sections with no visible countries
+              allSections.forEach(section => {
+                const visibleCountries = section.querySelectorAll('.country:not([style*="display: none"])');
+                if (visibleCountries.length === 0) {
+                  section.style.opacity = '0';
+                  setTimeout(() => {
+                    if (section.style.opacity === '0') {
+                      section.style.display = 'none';
+                    }
+                  }, 300);
+                } else {
+                  section.style.display = 'block';
+                  setTimeout(() => {
+                    section.style.opacity = '1';
+                  }, 10);
+                }
+              });
+            }
+          }, 300); // Debounce delay
+        });
+
+        const alphaNav = document.getElementById('alphaNav');
+        const letters = Array.from(new Set(countries.map(c=>c.name[0].toUpperCase()))).sort();
+        letters.forEach(l=>{
+          const a=document.createElement('a');
+          a.href='#section-'+l;
+          a.textContent=l;
+          alphaNav.appendChild(a);
+        });
+
+        const grouped=countries.reduce((acc,c)=>{
+          const L=c.name[0].toUpperCase();
+          (acc[L]=acc[L]||[]).push(c);
+          return acc;
+        }, {});
+        
+        const mainContent=document.getElementById('main-content');
+        Object.keys(grouped).sort().forEach((letter, index) => {
+          const sec=document.createElement('section');
+          sec.className='section';
+          sec.id='section-'+letter;
+          sec.style.animationDelay = `${index * 0.1}s`;
+          const h2=document.createElement('h2');
+          h2.textContent=letter;
+          sec.appendChild(h2);
+          const grid=document.createElement('div');
+          grid.className='grid';
+          grouped[letter].sort((a,b)=>a.name.localeCompare(b.name)).forEach(c=>{
+            const slug=slugify(c.name);
+            const a=document.createElement('a');
+            a.className='country';
+            a.href=`https://onlineworldnewspaperlist.blogspot.com/p/${slug}.html`;
+            a.target='_blank';
+            a.rel='noopener noreferrer';
+            const img=document.createElement('img');
+            img.src=`https://flagcdn.com/w40/${c.code}.png`;
+            img.alt=c.name+' flag';
+            const span=document.createElement('div');
+            span.className='name';
+            span.textContent=c.name;
+            a.appendChild(img);
+            a.appendChild(span);
+            grid.appendChild(a);
+          });
+          sec.appendChild(grid);
+          mainContent.appendChild(sec);
+        });
+        
+        // Add scroll offset to prevent header overlap
+        const sections = document.querySelectorAll('.section h2');
+        sections.forEach(section => {
+          section.style.scrollMarginTop = '120px';
+        });
+        
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Worldwide Newspapers Directory. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
