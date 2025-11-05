@@ -6,6 +6,7 @@
   <meta name="description" content="Discover newspapers from around the world with our comprehensive directory. Find top news sources by country."/>
   <title>Worldwide Newspapers Directory - Global News Sources</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="https://flagcdn.com/32/gb.png">
   <style>
     /* Modern CSS Variables */
@@ -67,35 +68,6 @@
       margin: 0 auto;
     }
     
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 0.5rem;
-      background: var(--light);
-      border-radius: 50px;
-      margin: 0.5rem 0;
-    }
-    
-    .nav-links a {
-      color: var(--dark);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 18px;
-      padding: 0.5rem 1.5rem;
-      border-radius: 30px;
-      transition: var(--transition);
-      background: transparent;
-    }
-    
-    .nav-links a:hover, .nav-links a.active {
-      background: var(--gradient);
-      color: white;
-      text-decoration: none;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
-    }
-    
     .brand h1 {
       font-size: 2.5rem;
       margin: 0;
@@ -121,13 +93,28 @@
     /* Search container */
     .search-container {
       max-width: 1200px;
-      margin: 0 auto 1.5rem;
+      margin: 0 auto 1rem;
       padding: 0 1rem;
     }
     
-    #countrySearch {
+    .search-box-wrapper {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .search-icon {
+      position: absolute;
+      left: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+    
+    .beautiful-search {
       width: 100%;
-      padding: 1rem 1.25rem;
+      padding: 1rem 1rem 1rem 3rem;
       border-radius: 50px;
       border: 2px solid var(--light-gray);
       font-size: 1rem;
@@ -137,9 +124,34 @@
       background: white;
     }
     
-    #countrySearch:focus {
+    .beautiful-search:focus {
       border-color: var(--primary);
       box-shadow: 0 4px 16px rgba(67, 97, 238, 0.2);
+    }
+
+    .clear-search-btn {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--gray);
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: var(--transition);
+    }
+
+    .clear-search-btn:hover {
+      background: var(--light-gray);
+      color: var(--dark);
     }
     
     /* Alphabet navigation */
@@ -159,6 +171,7 @@
       border-radius: var(--border-radius);
       box-shadow: var(--box-shadow);
       max-width: 1200px;
+      transition: opacity 0.3s ease;
     }
     
     .nav-alpha::-webkit-scrollbar {
@@ -338,6 +351,36 @@
       padding: 0;
     }
     
+    .nav-links-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.5rem;
+      background: var(--light);
+      border-radius: 50px;
+      margin: 0 auto 1.5rem;
+      max-width: 300px;
+    }
+    
+    .nav-links-bottom a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 0.5rem 1.5rem;
+      border-radius: 30px;
+      transition: var(--transition);
+      background: transparent;
+    }
+    
+    .nav-links-bottom a:hover, .nav-links-bottom a.active {
+      background: var(--gradient);
+      color: white;
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+    }
+    
     /* Posts */
     .post {
       background: #fff;
@@ -419,26 +462,26 @@
         font-size: 1rem;
       }
       
-      .nav-links {
-        gap: 0.5rem;
-        padding: 0.25rem;
-        margin: 0.5rem 1rem;
-      }
-      
-      .nav-links a {
-        padding: 0.5rem 1rem;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 30px;
-      }
+
       
       .search-container {
         padding: 0 1rem;
         margin: 0 0 1rem;
       }
       
+      .beautiful-search {
+        padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+      }
+      
       #countrySearch {
         border-radius: 50px;
+      }
+      
+      .clear-search-btn {
+        right: 0.75rem;
+        width: 24px;
+        height: 24px;
+        font-size: 1.2rem;
       }
       
       .nav-alpha {
@@ -446,6 +489,7 @@
         margin: 0 0 1rem;
         border-radius: 0;
         position: relative;
+        transition: opacity 0.3s ease;
       }
       
       .main-content {
@@ -496,13 +540,15 @@
         font-size: 1.75rem;
       }
       
-      .nav-links {
-        gap: 0.25rem;
+      .nav-links-bottom {
+        gap: 0.5rem;
+        max-width: 100%;
+        margin: 0 auto 1rem;
       }
       
-      .nav-links a {
-        padding: 0.5rem 0.75rem;
-        font-size: 18px;
+      .nav-links-bottom a {
+        padding: 0.5rem 1rem;
+        font-size: 16px;
         font-weight: 600;
         border-radius: 30px;
       }
@@ -538,17 +584,16 @@
       </h1>
       <p>Discover newspapers from around the globe</p>
     </div>
-    <div class="nav-links">
-      <a href="/" class="active">Home</a>
-      <a href="/p/about.html">About</a>
-      <a href="/p/contact.html">Contact</a>
+    <div class="search-container">
+      <div class="search-box-wrapper">
+        <i class="fas fa-search search-icon"></i>
+        <input id="countrySearch" placeholder="Search for a country... e.g. Germany, Japan, Brazil" type="text" class="beautiful-search"/>
+        <button id="clearSearch" class="clear-search-btn" title="Clear search">×</button>
+      </div>
     </div>
   </header>
 
   <div class="main-content">
-    <div class="search-container">
-      <input id="countrySearch" placeholder="Search for a country... e.g. Germany, Japan, Brazil" type="text"/>
-    </div>
     <nav class="nav-alpha" id="alphaNav"></nav>
     <main id="main-content">
       <!-- Country sections will be generated by JavaScript -->
@@ -771,7 +816,7 @@
 
       document.addEventListener('DOMContentLoaded', function() {
         // Add active class to current nav link
-        const navLinks = document.querySelectorAll('.nav-links a');
+        const navLinks = document.querySelectorAll('.nav-links-bottom a');
         navLinks.forEach(link => {
           if (link.getAttribute('href') === window.location.pathname) {
             link.classList.add('active');
@@ -780,7 +825,27 @@
         
         // Search functionality with debounce
         const searchInput = document.getElementById('countrySearch');
+        const clearSearchBtn = document.getElementById('clearSearch');
         let searchTimeout;
+        
+        // Show/hide clear button based on input
+        searchInput.addEventListener('input', function(e) {
+          if (e.target.value.length > 0) {
+            clearSearchBtn.style.display = 'flex';
+          } else {
+            clearSearchBtn.style.display = 'none';
+          }
+        });
+        
+        // Clear search functionality
+        clearSearchBtn.addEventListener('click', function() {
+          searchInput.value = '';
+          clearSearchBtn.style.display = 'none';
+          // Trigger input event to refresh the display
+          searchInput.dispatchEvent(new Event('input'));
+          // Show all countries
+          showAllCountries();
+        });
         
         searchInput.addEventListener('input', function(e) {
           clearTimeout(searchTimeout);
@@ -791,61 +856,58 @@
             
             if (searchTerm === '') {
               // Show all sections and countries when search is empty
-              allSections.forEach(section => {
-                section.style.display = 'block';
-                section.style.opacity = '1';
-              });
-              allCountries.forEach(country => {
-                country.style.display = 'flex';
-                country.style.opacity = '1';
-              });
-              // Show alphabet navigation
-              const alphaNav = document.getElementById('alphaNav');
-              alphaNav.style.display = 'flex';
-              alphaNav.style.position = 'relative';
+              showAllCountries();
             } else {
-              // Adjust alphabet navigation during search but don't hide it completely
+              // Keep alphabet navigation visible but adjust appearance
               const alphaNav = document.getElementById('alphaNav');
               alphaNav.style.position = 'relative';
-              alphaNav.style.opacity = '0.5';
+              alphaNav.style.opacity = '0.7';
               
-              // Filter countries
+              // Filter countries - show only matching countries
               allCountries.forEach(country => {
                 const countryName = country.querySelector('.name').textContent.toLowerCase();
                 if (countryName.includes(searchTerm)) {
                   country.style.display = 'flex';
                   country.style.opacity = '1';
-                  country.closest('.section').style.display = 'block';
                 } else {
-                  country.style.opacity = '0.3';
-                  setTimeout(() => {
-                    if (country.style.opacity === '0.3') {
-                      country.style.display = 'none';
-                    }
-                  }, 300);
+                  country.style.display = 'none';
                 }
               });
               
-              // Hide sections with no visible countries
+              // Hide sections with no matching countries
               allSections.forEach(section => {
                 const visibleCountries = section.querySelectorAll('.country:not([style*="display: none"])');
                 if (visibleCountries.length === 0) {
-                  section.style.opacity = '0';
-                  setTimeout(() => {
-                    if (section.style.opacity === '0') {
-                      section.style.display = 'none';
-                    }
-                  }, 300);
+                  section.style.display = 'none';
                 } else {
                   section.style.display = 'block';
-                  setTimeout(() => {
-                    section.style.opacity = '1';
-                  }, 10);
                 }
               });
             }
           }, 300); // Debounce delay
         });
+        
+        // Function to show all countries
+        function showAllCountries() {
+          const allCountries = document.querySelectorAll('.country');
+          const allSections = document.querySelectorAll('.section');
+          
+          // Show all sections and countries
+          allSections.forEach(section => {
+            section.style.display = 'block';
+            section.style.opacity = '1';
+          });
+          allCountries.forEach(country => {
+            country.style.display = 'flex';
+            country.style.opacity = '1';
+          });
+          
+          // Show alphabet navigation
+          const alphaNav = document.getElementById('alphaNav');
+          alphaNav.style.display = 'flex';
+          alphaNav.style.position = 'relative';
+          alphaNav.style.opacity = '1';
+        }
 
         const alphaNav = document.getElementById('alphaNav');
         const letters = Array.from(new Set(countries.map(c=>c.name[0].toUpperCase()))).sort();
@@ -919,6 +981,11 @@
 
   <footer>
     <div class="footer-content">
+      <div class="nav-links-bottom">
+        <a href="/" class="active">Home</a>
+        <a href="/p/about.html">About</a>
+        <a href="/p/contact.html">Contact</a>
+      </div>
       <p>&copy; 2025 Worldwide Newspapers Directory. All rights reserved.</p>
     </div>
   </footer>
