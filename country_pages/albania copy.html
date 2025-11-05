@@ -457,30 +457,94 @@
   </div>
 
   <script>
-        // Configuration - Change this for different countries
+    // Configuration - Change this for different countries
     const config = {
-        country: "Poland",
-        countryCode: "pl",
-        countrySlug: "poland",
-        newspapers: [
-        {
-                "name": "Gazeta Wyborcza",
-                "url": "https://wyborcza.pl/"
-        },
-        {
-                "name": "Rzeczpospolita",
-                "url": "https://www.rp.pl/"
-        },
-        {
-                "name": "Dziennik",
-                "url": "https://www.dziennik.pl/"
-        },
-        {
-                "name": "Puls Biznesu",
-                "url": "https://www.pb.pl/"
-        }
-]
-    };// SEO Configuration - Dynamic content based on country
+      country: "Albania",
+      countryCode: "al",
+      countrySlug: "albania",
+      newspapers: [
+        { name: "Panorama", url: "http://www.panorama.com.al/" },
+        { name: "Balkanweb Online", url: "https://www.balkanweb.com/" },
+        { name: "Koha Jonë", url: "http://www.kohajone.com/" },
+        { name: "Gazeta Tema", url: "http://www.gazetatema.net/" },
+        { name: "Gazetës Shekulli", url: "http://shekulli.com.al/" },
+        { name: "Albanian Daily News", url: "http://www.albaniannews.com/" },
+        { name: "Gazeta Express", url: "https://www.gazetaexpress.com/" },
+        { name: "24 ore lajme", url: "http://24-ore.com/" },
+        { name: "Tirana Times", url: "http://www.tiranatimes.com/" },
+        { name: "Shqiptarja", url: "http://shqiptarja.com/" },
+        { name: "DITA (Tirana)", url: "http://www.gazetadita.al/" },
+        { name: "Gazeta Sot", url: "https://sot.com.al/" },
+        { name: "Java", url: "http://www.javanews.al/" },
+        { name: "Albanian Radio and TV", url: "https://www.rtsh.al/" },
+        { name: "Mapo", url: "http://www.mapo.al/" },
+        { name: "Shqip", url: "http://www.gazeta-shqip.com/" },
+        { name: "Albanian Telegraphic Agency", url: "http://ata.gov.al/" },
+        { name: "Standard", url: "http://www.standard.al/" },
+        { name: "TV Klan", url: "http://tvklan.al/" },
+        { name: "Telegraf", url: "http://telegraf.al/" },
+        { name: "Vetevendosje", url: "https://www.vetevendosje.org/" },
+        { name: "Ballkan", url: "https://www.ballkan.com/" },
+        { name: "Epoka e re", url: "https://www.epokaere.com/" },
+        { name: "Tirana Observer", url: "http://www.tiranaobserver.al/" },
+        { name: "24 orë", url: "http://www.24-ore.com/" },
+        { name: "Albania News (in italian)", url: "http://www.albanianews.it/" },
+        { name: "Balkans - Business news focusing on Balcan (EN, EL, SR)", url: "http://www.balkans.com/" },
+        { name: "BalkanWeb.com", url: "http://www.balkanweb.com/site/" },
+        { name: "Gazeta Panorama ONLINE (SQ)", url: "http://www.panorama.com.al/" },
+        { name: "Standard", url: "https://standard.al/" },
+        { name: "Telegraf", url: "https://telegraf.al/" },
+        { name: "JOQ Albania", url: "https://joq-albania.com/" },
+        { name: "Albeu", url: "https://albeu.com/" },
+        { name: "opinion.al", url: "https://opinion.al/" },
+        { name: "balkanweb.com", url: "https://www.balkanweb.com/" },
+        { name: "Noa Lajme", url: "https://noa.al/" },
+        { name: "lapsi.al", url: "https://lapsi.al/" },
+        { name: "360grade.al", url: "https://360grade.al/" },
+        { name: "Top channel", url: "https://top-channel.tv/" },
+        { name: "Vision Plus", url: "https://www.vizionplus.tv/" },
+        { name: "Ora news", url: "https://www.oranews.tv/" },
+        { name: "politiko.al", url: "https://politiko.al/" },
+        { name: "fax.al", url: "http://fax.al/" },
+        { name: "Gazeta Blic", url: "https://gazetablic.com/" },
+        { name: "News bomb", url: "https://newsbomb.al/" },
+        { name: "Lajmi Fundit", url: "https://lajmifundit.al/" },
+        { name: "Tirana Post", url: "https://www.tiranapost.al/" },
+        { name: "City News", url: "https://www.cna.al/" },
+        { name: "Epoka e re", url: "https://www.epokaere.com/" },
+        { name: "Tirana Observer", url: "https://www.tiranaobserver.al/" },
+        { name: "TV Klan", url: "https://tvklan.al/" },
+        { name: "lexo.al", url: "https://lexo.al/" },
+        { name: "Shqiperia", url: "https://www.shqiperia.com/" },
+        { name: "24 Orë", url: "http://www.24-ore.com/" },
+        { name: "ABC News", url: "https://www.abcnews.al/" },
+        { name: "Agjencia e Lajmeve Albpress", url: "https://www.noa.al/" },
+        { name: "AlbaNews", url: "http://albanews.org/" },
+        { name: "Albanian Daily News", url: "http://www.albaniannews.com/" },
+        { name: "Albanian Economy News", url: "http://www.albanianeconomy.com/" },
+        { name: "Albanian Telegraphic Agency", url: "http://ata.gov.al/" },
+        { name: "Albanian Telegraphic Agency", url: "http://en.ata.gov.al/" },
+        { name: "Albeu", url: "https://www.albeu.com/" },
+        { name: "Alb News", url: "https://www.facebook.com/albnews.al/" },
+        { name: "Express", url: "http://www.gazetaexpress.com/" },
+        { name: "Gazeta Albania", url: "https://www.facebook.com/GazetaAlbania.Official/" },
+        { name: "Koha Jone", url: "http://www.kohajone.com/" },
+        { name: "Lajme", url: "http://www.lajme.gen.al/" },
+        { name: "Lajmet Shqip", url: "http://www.lajmetshqip.com/" },
+        { name: "LajmiFundit", url: "http://www.lajmifundit.al/" },
+        { name: "Panorama Online", url: "http://www.panorama.com.al/" },
+        { name: "Panorama Sport", url: "http://www.panorama.com.al/sport/" },
+        { name: "Shekulli", url: "http://shekulli.com.al/" },
+        { name: "Shqip", url: "http://www.gazeta-shqip.com/" },
+        { name: "Shqip Media", url: "http://www.shqipmedia.com/" },
+        { name: "TanPortal & TanMedia", url: "http://www.tanmarket.com/php/" },
+        { name: "Tema Online", url: "http://www.gazetatema.net/" },
+        { name: "Tirana Times", url: "http://www.tiranatimes.com/" },
+        { name: "Zéri", url: "http://www.zeri.info/" }
+      ]
+    };
+
+    // SEO Configuration - Dynamic content based on country
     const seoConfig = {
       baseUrl: "https://onlineworldnewspaperlist.blogspot.com/p/",
       getImageUrl: function(countryCode) {
