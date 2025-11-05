@@ -1,0 +1,23 @@
+{
+  "name": "Norway",
+  "code": "no",
+  "slug": "norway",
+  "newspapers": [
+    {
+      "name": "Aftenposten",
+      "url": "https://www.aftenposten.no/"
+    },
+    {
+      "name": "VG",
+      "url": "https://www.vg.no/"
+    },
+    {
+      "name": "Dagbladet",
+      "url": "https://www.dagbladet.no/"
+    },
+    {
+      "name": "DN",
+      "url": "https://www.dn.no/"
+    }
+  ]
+}

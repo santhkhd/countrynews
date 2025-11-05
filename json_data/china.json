@@ -1,0 +1,27 @@
+{
+  "name": "China",
+  "code": "cn",
+  "slug": "china",
+  "newspapers": [
+    {
+      "name": "Xinhua News Agency",
+      "url": "http://www.xinhuanet.com/"
+    },
+    {
+      "name": "People's Daily",
+      "url": "http://en.people.cn/"
+    },
+    {
+      "name": "China Daily",
+      "url": "https://www.chinadaily.com.cn/"
+    },
+    {
+      "name": "Global Times",
+      "url": "https://www.globaltimes.cn/"
+    },
+    {
+      "name": "Beijing Review",
+      "url": "https://www.bjreview.com/"
+    }
+  ]
+}

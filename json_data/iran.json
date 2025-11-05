@@ -1,0 +1,27 @@
+{
+  "name": "Iran",
+  "code": "ir",
+  "slug": "iran",
+  "newspapers": [
+    {
+      "name": "Kayhan",
+      "url": "https://kayhan.ir/"
+    },
+    {
+      "name": "Ettela'at",
+      "url": "https://ettelaat.com/"
+    },
+    {
+      "name": "Hamshahri",
+      "url": "https://www.hamshahrionline.ir/"
+    },
+    {
+      "name": "Iran Daily",
+      "url": "https://www.iran-daily.com/"
+    },
+    {
+      "name": "Tehran Times",
+      "url": "https://www.tehrantimes.com/"
+    }
+  ]
+}

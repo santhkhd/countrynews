@@ -1,0 +1,23 @@
+{
+  "name": "Denmark",
+  "code": "dk",
+  "slug": "denmark",
+  "newspapers": [
+    {
+      "name": "Berlingske",
+      "url": "https://www.berlingske.dk/"
+    },
+    {
+      "name": "Politiken",
+      "url": "https://politiken.dk/"
+    },
+    {
+      "name": "Jyllands-Posten",
+      "url": "https://jyllands-posten.dk/"
+    },
+    {
+      "name": "Kristeligt Dagblad",
+      "url": "https://www.kristeligt-dagblad.dk/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Chile",
+  "code": "cl",
+  "slug": "chile",
+  "newspapers": [
+    {
+      "name": "El Mercurio",
+      "url": "https://www.elmercurio.com/"
+    },
+    {
+      "name": "La Tercera",
+      "url": "https://www.latercera.com/"
+    },
+    {
+      "name": "La Segunda",
+      "url": "https://www.lasegunda.com/"
+    },
+    {
+      "name": "El Mostrador",
+      "url": "https://www.elmostrador.cl/"
+    },
+    {
+      "name": "Cooperativa",
+      "url": "https://www.cooperativa.cl/"
+    }
+  ]
+}

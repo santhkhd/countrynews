@@ -1,0 +1,27 @@
+{
+  "name": "Ireland",
+  "code": "ie",
+  "slug": "ireland",
+  "newspapers": [
+    {
+      "name": "The Irish Times",
+      "url": "https://www.irishtimes.com/"
+    },
+    {
+      "name": "Irish Examiner",
+      "url": "https://www.irishexaminer.com/"
+    },
+    {
+      "name": "The Irish Independent",
+      "url": "https://www.independent.ie/"
+    },
+    {
+      "name": "The Sunday Independent",
+      "url": "https://www.independent.ie/"
+    },
+    {
+      "name": "Evening Herald",
+      "url": "https://www.herald.ie/"
+    }
+  ]
+}

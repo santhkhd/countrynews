@@ -1,0 +1,27 @@
+{
+  "name": "Germany",
+  "code": "de",
+  "slug": "germany",
+  "newspapers": [
+    {
+      "name": "Süddeutsche Zeitung",
+      "url": "https://www.sueddeutsche.de/"
+    },
+    {
+      "name": "Frankfurter Allgemeine Zeitung",
+      "url": "https://www.faz.net/"
+    },
+    {
+      "name": "Die Welt",
+      "url": "https://www.welt.de/"
+    },
+    {
+      "name": "Der Spiegel",
+      "url": "https://www.spiegel.de/"
+    },
+    {
+      "name": "Bild",
+      "url": "https://www.bild.de/"
+    }
+  ]
+}

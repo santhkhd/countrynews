@@ -1,0 +1,23 @@
+{
+  "name": "Vietnam",
+  "code": "vn",
+  "slug": "vietnam",
+  "newspapers": [
+    {
+      "name": "Tuổi Trẻ",
+      "url": "https://tuoitre.vn/"
+    },
+    {
+      "name": "Thanh Niên",
+      "url": "https://thanhnien.vn/"
+    },
+    {
+      "name": "Nhân Dân",
+      "url": "https://nhandan.vn/"
+    },
+    {
+      "name": "VNExpress",
+      "url": "https://vnexpress.net/"
+    }
+  ]
+}

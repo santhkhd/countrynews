@@ -1,0 +1,27 @@
+{
+  "name": "Pakistan",
+  "code": "pk",
+  "slug": "pakistan",
+  "newspapers": [
+    {
+      "name": "Dawn",
+      "url": "https://www.dawn.com/"
+    },
+    {
+      "name": "The News",
+      "url": "https://www.thenews.com.pk/"
+    },
+    {
+      "name": "Express Tribune",
+      "url": "https://tribune.com.pk/"
+    },
+    {
+      "name": "Jang",
+      "url": "https://www.jang.com.pk/"
+    },
+    {
+      "name": "Nawa-i-Waqt",
+      "url": "https://www.nawaiwaqt.com.pk/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "France",
+  "code": "fr",
+  "slug": "france",
+  "newspapers": [
+    {
+      "name": "Le Monde",
+      "url": "https://www.lemonde.fr/"
+    },
+    {
+      "name": "Le Figaro",
+      "url": "https://www.lefigaro.fr/"
+    },
+    {
+      "name": "Libération",
+      "url": "https://www.liberation.fr/"
+    },
+    {
+      "name": "Les Echos",
+      "url": "https://www.lesechos.fr/"
+    },
+    {
+      "name": "L'Humanité",
+      "url": "https://www.humanite.fr/"
+    }
+  ]
+}

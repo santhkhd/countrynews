@@ -1,0 +1,23 @@
+{
+  "name": "Turkey",
+  "code": "tr",
+  "slug": "turkey",
+  "newspapers": [
+    {
+      "name": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/"
+    },
+    {
+      "name": "Sabah",
+      "url": "https://www.sabah.com.tr/"
+    },
+    {
+      "name": "Milliyet",
+      "url": "https://www.milliyet.com.tr/"
+    },
+    {
+      "name": "Cumhuriyet",
+      "url": "https://www.cumhuriyet.com.tr/"
+    }
+  ]
+}

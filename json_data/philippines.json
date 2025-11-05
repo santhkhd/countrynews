@@ -1,0 +1,27 @@
+{
+  "name": "Philippines",
+  "code": "ph",
+  "slug": "philippines",
+  "newspapers": [
+    {
+      "name": "Philippine Daily Inquirer",
+      "url": "https://www.inquirer.net/"
+    },
+    {
+      "name": "Manila Bulletin",
+      "url": "https://mb.com.ph/"
+    },
+    {
+      "name": "The Philippine Star",
+      "url": "https://www.philstar.com/"
+    },
+    {
+      "name": "Manila Times",
+      "url": "https://www.manilatimes.net/"
+    },
+    {
+      "name": "SunStar",
+      "url": "https://www.sunstar.com.ph/"
+    }
+  ]
+}

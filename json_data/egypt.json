@@ -1,0 +1,27 @@
+{
+  "name": "Egypt",
+  "code": "eg",
+  "slug": "egypt",
+  "newspapers": [
+    {
+      "name": "Al-Ahram",
+      "url": "https://english.ahram.org.eg/"
+    },
+    {
+      "name": "Al Masry Al Youm",
+      "url": "https://www.almasryalyoum.com/"
+    },
+    {
+      "name": "Al Wafd",
+      "url": "https://www.alwafd.news/"
+    },
+    {
+      "name": "Al Akhbar",
+      "url": "https://www.alakhbar.com/"
+    },
+    {
+      "name": "Rose al-Youssef",
+      "url": "https://www.roseal-youssef.com/"
+    }
+  ]
+}

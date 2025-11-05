@@ -1,0 +1,27 @@
+{
+  "name": "Colombia",
+  "code": "co",
+  "slug": "colombia",
+  "newspapers": [
+    {
+      "name": "El Tiempo",
+      "url": "https://www.eltiempo.com/"
+    },
+    {
+      "name": "El Espectador",
+      "url": "https://www.elespectador.com/"
+    },
+    {
+      "name": "Portafolio",
+      "url": "https://www.portafolio.co/"
+    },
+    {
+      "name": "La República",
+      "url": "https://www.larepublica.co/"
+    },
+    {
+      "name": "Semana",
+      "url": "https://www.semana.com/"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Australia",
+  "code": "au",
+  "slug": "australia",
+  "newspapers": [
+    {
+      "name": "The Sydney Morning Herald",
+      "url": "https://www.smh.com.au/"
+    },
+    {
+      "name": "The Age",
+      "url": "https://www.theage.com.au/"
+    },
+    {
+      "name": "The Australian",
+      "url": "https://www.theaustralian.com.au/"
+    },
+    {
+      "name": "The Courier-Mail",
+      "url": "https://www.couriermail.com.au/"
+    },
+    {
+      "name": "Adelaide Advertiser",
+      "url": "https://www.adelaidenow.com.au/"
+    },
+    {
+      "name": "Perth Now",
+      "url": "https://www.perthnow.com.au/"
+    },
+    {
+      "name": "The Daily Telegraph",
+      "url": "https://www.dailytelegraph.com.au/"
+    },
+    {
+      "name": "Herald Sun",
+      "url": "https://www.heraldsun.com.au/"
+    }
+  ]
+}

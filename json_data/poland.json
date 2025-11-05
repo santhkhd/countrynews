@@ -1,0 +1,23 @@
+{
+  "name": "Poland",
+  "code": "pl",
+  "slug": "poland",
+  "newspapers": [
+    {
+      "name": "Gazeta Wyborcza",
+      "url": "https://wyborcza.pl/"
+    },
+    {
+      "name": "Rzeczpospolita",
+      "url": "https://www.rp.pl/"
+    },
+    {
+      "name": "Dziennik",
+      "url": "https://www.dziennik.pl/"
+    },
+    {
+      "name": "Puls Biznesu",
+      "url": "https://www.pb.pl/"
+    }
+  ]
+}

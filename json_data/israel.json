@@ -1,0 +1,23 @@
+{
+  "name": "Israel",
+  "code": "il",
+  "slug": "israel",
+  "newspapers": [
+    {
+      "name": "Haaretz",
+      "url": "https://www.haaretz.com/"
+    },
+    {
+      "name": "Yedioth Ahronoth",
+      "url": "https://www.ynet.co.il/"
+    },
+    {
+      "name": "Maariv",
+      "url": "https://www.maariv.co.il/"
+    },
+    {
+      "name": "Jerusalem Post",
+      "url": "https://www.jpost.com/"
+    }
+  ]
+}

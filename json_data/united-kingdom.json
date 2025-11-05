@@ -1,0 +1,27 @@
+{
+  "name": "United Kingdom",
+  "code": "gb",
+  "slug": "united-kingdom",
+  "newspapers": [
+    {
+      "name": "The Times",
+      "url": "https://www.thetimes.co.uk/"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/"
+    },
+    {
+      "name": "Daily Telegraph",
+      "url": "https://www.telegraph.co.uk/"
+    },
+    {
+      "name": "Financial Times",
+      "url": "https://www.ft.com/"
+    },
+    {
+      "name": "The Sun",
+      "url": "https://www.thesun.co.uk/"
+    }
+  ]
+}

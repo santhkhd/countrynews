@@ -1,0 +1,27 @@
+{
+  "name": "Indonesia",
+  "code": "id",
+  "slug": "indonesia",
+  "newspapers": [
+    {
+      "name": "Kompas",
+      "url": "https://www.kompas.com/"
+    },
+    {
+      "name": "Suara Karya",
+      "url": "https://www.suarakarya.id/"
+    },
+    {
+      "name": "Media Indonesia",
+      "url": "https://mediaindonesia.com/"
+    },
+    {
+      "name": "Republika",
+      "url": "https://www.republika.co.id/"
+    },
+    {
+      "name": "Tempo",
+      "url": "https://www.tempo.co/"
+    }
+  ]
+}

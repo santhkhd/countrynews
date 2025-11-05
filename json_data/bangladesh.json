@@ -1,0 +1,27 @@
+{
+  "name": "Bangladesh",
+  "code": "bd",
+  "slug": "bangladesh",
+  "newspapers": [
+    {
+      "name": "Prothom Alo",
+      "url": "https://www.prothomalo.com/"
+    },
+    {
+      "name": "The Daily Star",
+      "url": "https://www.thedailystar.net/"
+    },
+    {
+      "name": "BDNews24",
+      "url": "https://bdnews24.com/"
+    },
+    {
+      "name": "Dhaka Tribune",
+      "url": "https://www.dhakatribune.com/"
+    },
+    {
+      "name": "The Financial Express",
+      "url": "https://thefinancialexpress.com.bd/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Peru",
+  "code": "pe",
+  "slug": "peru",
+  "newspapers": [
+    {
+      "name": "El Comercio",
+      "url": "https://elcomercio.pe/"
+    },
+    {
+      "name": "La República",
+      "url": "https://larepublica.pe/"
+    },
+    {
+      "name": "Gestión",
+      "url": "https://gestion.pe/"
+    },
+    {
+      "name": "Correio Braziliense",
+      "url": "https://www.correiobraziliense.com.br/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Iraq",
+  "code": "iq",
+  "slug": "iraq",
+  "newspapers": [
+    {
+      "name": "Al-Zaman",
+      "url": "https://alzaman.com/"
+    },
+    {
+      "name": "Al-Sabah",
+      "url": "https://alsabah.iq/"
+    },
+    {
+      "name": "Al-Mada",
+      "url": "https://almadapaper.net/"
+    },
+    {
+      "name": "Al-Bayan",
+      "url": "https://albayan.ae/"
+    }
+  ]
+}

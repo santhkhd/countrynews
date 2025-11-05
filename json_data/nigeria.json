@@ -1,0 +1,27 @@
+{
+  "name": "Nigeria",
+  "code": "ng",
+  "slug": "nigeria",
+  "newspapers": [
+    {
+      "name": "The Punch",
+      "url": "https://punchng.com/"
+    },
+    {
+      "name": "Vanguard",
+      "url": "https://www.vanguardngr.com/"
+    },
+    {
+      "name": "The Nation",
+      "url": "https://thenationonlineng.net/"
+    },
+    {
+      "name": "Daily Trust",
+      "url": "https://dailytrust.com/"
+    },
+    {
+      "name": "ThisDay",
+      "url": "https://www.thisdaylive.com/"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "name": "Afghanistan",
+  "code": "af",
+  "slug": "afghanistan",
+  "newspapers": [
+    {
+      "name": "Afghanistan Times Daily",
+      "url": "https://theafghantimes.com/"
+    },
+    {
+      "name": "Outlook Afghanistan",
+      "url": "http://www.outlookafghanistan.net/"
+    },
+    {
+      "name": "Khaama Press",
+      "url": "https://www.khaama.com/"
+    },
+    {
+      "name": "Pajhwok Afghan News",
+      "url": "https://pajhwok.com/"
+    },
+    {
+      "name": "nunn.asia",
+      "url": "https://www.nunn.asia/"
+    },
+    {
+      "name": "Bakhtar News Agency (BNA)",
+      "url": "https://www.bakhtarnews.af/"
+    },
+    {
+      "name": "Afghan Paper",
+      "url": "https://www.afghanpaper.com/"
+    },
+    {
+      "name": "Etilaat Roz",
+      "url": "https://www.etilaatroz.com/"
+    },
+    {
+      "name": "Ariana News",
+      "url": "https://www.ariananews.af/"
+    },
+    {
+      "name": "Tolafghan",
+      "url": "https://www.tolafghan.com/"
+    },
+    {
+      "name": "Wadsam",
+      "url": "https://wadsam.com/"
+    },
+    {
+      "name": "Larabar",
+      "url": "https://larawbar.net/"
+    },
+    {
+      "name": "Arman e Mili",
+      "url": "https://armanemili.com/"
+    },
+    {
+      "name": "Tolonews",
+      "url": "https://tolonews.com/"
+    },
+    {
+      "name": "Afghan Voice Agancy (AVA)",
+      "url": "https://www.avapress.com/en/"
+    },
+    {
+      "name": "Shamshad TV",
+      "url": "https://shamshadtv.tv/"
+    },
+    {
+      "name": "Azadi Radio",
+      "url": "https://www.azadiradio.com/"
+    },
+    {
+      "name": "Benawa",
+      "url": "http://www.benawa.com/"
+    },
+    {
+      "name": "Kabul Press",
+      "url": "https://www.kabulpress.org/"
+    },
+    {
+      "name": "Afghan Online Press",
+      "url": "https://www.aopnews.com/"
+    },
+    {
+      "name": "Lemar TV",
+      "url": "https://www.lemar.tv/"
+    },
+    {
+      "name": "Sabawoon",
+      "url": "http://www.sabawoon.com/"
+    },
+    {
+      "name": "Ariaye",
+      "url": "https://ariaye.com/"
+    },
+    {
+      "name": "Pashto VOA",
+      "url": "https://www.pashtovoa.com/"
+    },
+    {
+      "name": "Dari VOA",
+      "url": "https://www.darivoa.com/"
+    },
+    {
+      "name": "Daily Afghanistan",
+      "url": "http://www.dailyafghanistan.com/"
+    },
+    {
+      "name": "Afghanistan.ru",
+      "url": "https://afghanistan.ru/"
+    },
+    {
+      "name": "Rohi",
+      "url": "https://rohi.af/"
+    },
+    {
+      "name": "Eslah Online",
+      "url": "https://www.eslahonline.net/"
+    },
+    {
+      "name": "Afghanistan Analysts Network",
+      "url": "https://www.afghanistan-analysts.org/"
+    },
+    {
+      "name": "Jawedan",
+      "url": "https://jawedan.com/"
+    },
+    {
+      "name": "Farsi",
+      "url": "http://www.farsi.ru/"
+    },
+    {
+      "name": "Mandegar",
+      "url": "https://mandegardaily.com/"
+    },
+    {
+      "name": "Afghan Islamic Press (AIP)",
+      "url": "https://www.afghanislamicpress.com/"
+    },
+    {
+      "name": "Dawat Media",
+      "url": "https://dawatmedia24.com/"
+    },
+    {
+      "name": "BBC World Service : Pashto",
+      "url": "https://www.bbc.com/pashto"
+    },
+    {
+      "name": "Sputnik News Afghanistan",
+      "url": "https://sputnik.af/"
+    },
+    {
+      "name": "Elonat Magazine",
+      "url": "http://www.elonat.com/"
+    },
+    {
+      "name": "Yahoo news | Afghanistan",
+      "url": "https://www.yahoo.com/news/tagged/afghanistan/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Belgium",
+  "code": "be",
+  "slug": "belgium",
+  "newspapers": [
+    {
+      "name": "Le Soir",
+      "url": "https://www.lesoir.be/"
+    },
+    {
+      "name": "De Standaard",
+      "url": "https://www.standaard.be/"
+    },
+    {
+      "name": "Het Laatste Nieuws",
+      "url": "https://www.hln.be/"
+    },
+    {
+      "name": "De Morgen",
+      "url": "https://demorgen.be/"
+    },
+    {
+      "name": "Le Vif",
+      "url": "https://www.levif.be/"
+    }
+  ]
+}

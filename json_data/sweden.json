@@ -1,0 +1,23 @@
+{
+  "name": "Sweden",
+  "code": "se",
+  "slug": "sweden",
+  "newspapers": [
+    {
+      "name": "Dagens Nyheter",
+      "url": "https://www.dn.se/"
+    },
+    {
+      "name": "Svenska Dagbladet",
+      "url": "https://www.svd.se/"
+    },
+    {
+      "name": "Aftonbladet",
+      "url": "https://www.aftonbladet.se/"
+    },
+    {
+      "name": "Expressen",
+      "url": "https://www.expressen.se/"
+    }
+  ]
+}

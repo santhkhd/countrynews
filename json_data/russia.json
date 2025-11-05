@@ -1,0 +1,23 @@
+{
+  "name": "Russia",
+  "code": "ru",
+  "slug": "russia",
+  "newspapers": [
+    {
+      "name": "Moskovsky Komsomolets",
+      "url": "https://www.mk.ru/"
+    },
+    {
+      "name": "Izvestia",
+      "url": "https://iz.ru/"
+    },
+    {
+      "name": "Rossiyskaya Gazeta",
+      "url": "https://rg.ru/"
+    },
+    {
+      "name": "Komsomolskaya Pravda",
+      "url": "https://www.kp.ru/"
+    }
+  ]
+}

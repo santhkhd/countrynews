@@ -1,0 +1,23 @@
+{
+  "name": "South Korea",
+  "code": "kr",
+  "slug": "south-korea",
+  "newspapers": [
+    {
+      "name": "Chosun Ilbo",
+      "url": "https://www.chosun.com/"
+    },
+    {
+      "name": "JoongAng Ilbo",
+      "url": "https://www.joongang.co.kr/"
+    },
+    {
+      "name": "Dong-a Ilbo",
+      "url": "https://www.donga.com/"
+    },
+    {
+      "name": "Hankyoreh",
+      "url": "https://www.hani.co.kr/"
+    }
+  ]
+}

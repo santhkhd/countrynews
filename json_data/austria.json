@@ -1,0 +1,27 @@
+{
+  "name": "Austria",
+  "code": "at",
+  "slug": "austria",
+  "newspapers": [
+    {
+      "name": "Der Standard",
+      "url": "https://www.derstandard.at/"
+    },
+    {
+      "name": "Kurier",
+      "url": "https://kurier.at/"
+    },
+    {
+      "name": "Die Presse",
+      "url": "https://www.diepresse.com/"
+    },
+    {
+      "name": "Wiener Zeitung",
+      "url": "https://www.wienerzeitung.at/"
+    },
+    {
+      "name": "Salzburger Nachrichten",
+      "url": "https://www.sn.at/"
+    }
+  ]
+}

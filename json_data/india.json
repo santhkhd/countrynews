@@ -1,0 +1,87 @@
+{
+  "name": "India",
+  "code": "in",
+  "slug": "india",
+  "newspapers": [
+    {
+      "name": "The Times of India",
+      "url": "https://timesofindia.indiatimes.com"
+    },
+    {
+      "name": "The Hindu",
+      "url": "https://www.thehindu.com"
+    },
+    {
+      "name": "Hindustan Times",
+      "url": "https://www.hindustantimes.com"
+    },
+    {
+      "name": "The Indian Express",
+      "url": "https://indianexpress.com"
+    },
+    {
+      "name": "Economic Times",
+      "url": "https://economictimes.indiatimes.com"
+    },
+    {
+      "name": "Business Standard",
+      "url": "https://www.business-standard.com"
+    },
+    {
+      "name": "Financial Express",
+      "url": "https://www.financialexpress.com"
+    },
+    {
+      "name": "Deccan Chronicle",
+      "url": "https://www.deccanchronicle.com"
+    },
+    {
+      "name": "The Statesman",
+      "url": "https://www.thestatesman.com"
+    },
+    {
+      "name": "Telegraph India",
+      "url": "https://www.telegraphindia.com"
+    },
+    {
+      "name": "DNA India",
+      "url": "https://www.dnaindia.com"
+    },
+    {
+      "name": "Mint",
+      "url": "https://www.livemint.com"
+    },
+    {
+      "name": "Outlook",
+      "url": "https://www.outlookindia.com"
+    },
+    {
+      "name": "India Today",
+      "url": "https://www.indiatoday.in"
+    },
+    {
+      "name": "NDTV",
+      "url": "https://www.ndtv.com"
+    },
+    {
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com"
+    },
+    {
+      "name": "Scroll.in",
+      "url": "https://scroll.in"
+    },
+    {
+      "name": "The Quint",
+      "url": "https://www.thequint.com"
+    },
+    {
+      "name": "News18",
+      "url": "https://www.news18.com"
+    },
+    {
+      "name": "Zee News",
+      "url": "https://zeenews.indiatimes.com"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Greece",
+  "code": "gr",
+  "slug": "greece",
+  "newspapers": [
+    {
+      "name": "Kathimerini",
+      "url": "https://www.kathimerini.gr/"
+    },
+    {
+      "name": "Ta Nea",
+      "url": "https://www.tanea.gr/"
+    },
+    {
+      "name": "Ethnos",
+      "url": "https://www.ethnos.gr/"
+    },
+    {
+      "name": "To Vima",
+      "url": "https://www.tovima.gr/"
+    }
+  ]
+}

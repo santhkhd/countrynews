@@ -1,0 +1,23 @@
+{
+  "name": "Ukraine",
+  "code": "ua",
+  "slug": "ukraine",
+  "newspapers": [
+    {
+      "name": "Kyiv Post",
+      "url": "https://www.kyivpost.com/"
+    },
+    {
+      "name": "Ukrainska Pravda",
+      "url": "https://www.pravda.com.ua/"
+    },
+    {
+      "name": "Segodnya",
+      "url": "https://segodnya.ua/"
+    },
+    {
+      "name": "Glavcom",
+      "url": "https://glavcom.ua/"
+    }
+  ]
+}

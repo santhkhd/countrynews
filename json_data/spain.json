@@ -1,0 +1,27 @@
+{
+  "name": "Spain",
+  "code": "es",
+  "slug": "spain",
+  "newspapers": [
+    {
+      "name": "El País",
+      "url": "https://elpais.com/"
+    },
+    {
+      "name": "El Mundo",
+      "url": "https://www.elmundo.es/"
+    },
+    {
+      "name": "ABC",
+      "url": "https://www.abc.es/"
+    },
+    {
+      "name": "La Vanguardia",
+      "url": "https://www.lavanguardia.com/"
+    },
+    {
+      "name": "El Confidencial",
+      "url": "https://www.elconfidencial.com/"
+    }
+  ]
+}

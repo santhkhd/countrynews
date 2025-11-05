@@ -1,0 +1,23 @@
+{
+  "name": "New Zealand",
+  "code": "nz",
+  "slug": "new-zealand",
+  "newspapers": [
+    {
+      "name": "The New Zealand Herald",
+      "url": "https://www.nzherald.co.nz/"
+    },
+    {
+      "name": "Stuff",
+      "url": "https://www.stuff.co.nz/"
+    },
+    {
+      "name": "Dominion Post",
+      "url": "https://www.stuff.co.nz/dominion-post"
+    },
+    {
+      "name": "The Press",
+      "url": "https://www.stuff.co.nz/the-press"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Saudi Arabia",
+  "code": "sa",
+  "slug": "saudi-arabia",
+  "newspapers": [
+    {
+      "name": "Al-Riyadh",
+      "url": "https://www.alriyadh.com/"
+    },
+    {
+      "name": "Asharq Al-Awsat",
+      "url": "https://aawsat.com/"
+    },
+    {
+      "name": "Al-Medina",
+      "url": "https://www.al-madina.com/"
+    },
+    {
+      "name": "Okaz",
+      "url": "https://www.okaz.com.sa/"
+    }
+  ]
+}

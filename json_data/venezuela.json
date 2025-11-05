@@ -1,0 +1,23 @@
+{
+  "name": "Venezuela",
+  "code": "ve",
+  "slug": "venezuela",
+  "newspapers": [
+    {
+      "name": "El Universal",
+      "url": "https://www.eluniversal.com/"
+    },
+    {
+      "name": "El Nacional",
+      "url": "https://www.el-nacional.com/"
+    },
+    {
+      "name": "Últimas Noticias",
+      "url": "https://www.ultimasnoticias.com.ve/"
+    },
+    {
+      "name": "Tal Cual",
+      "url": "https://www.talcualdigital.com/"
+    }
+  ]
+}

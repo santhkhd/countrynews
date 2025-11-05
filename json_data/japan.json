@@ -1,0 +1,27 @@
+{
+  "name": "Japan",
+  "code": "jp",
+  "slug": "japan",
+  "newspapers": [
+    {
+      "name": "Asahi Shimbun",
+      "url": "https://www.asahi.com/"
+    },
+    {
+      "name": "Yomiuri Shimbun",
+      "url": "https://www.yomiuri.co.jp/"
+    },
+    {
+      "name": "Mainichi Shimbun",
+      "url": "https://mainichi.jp/"
+    },
+    {
+      "name": "Nikkei",
+      "url": "https://www.nikkei.com/"
+    },
+    {
+      "name": "Sankei Shimbun",
+      "url": "https://www.sankei.com/"
+    }
+  ]
+}

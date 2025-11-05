@@ -1,0 +1,27 @@
+{
+  "name": "Netherlands",
+  "code": "nl",
+  "slug": "netherlands",
+  "newspapers": [
+    {
+      "name": "NRC Handelsblad",
+      "url": "https://www.nrc.nl/"
+    },
+    {
+      "name": "De Volkskrant",
+      "url": "https://www.volkskrant.nl/"
+    },
+    {
+      "name": "Trouw",
+      "url": "https://www.trouw.nl/"
+    },
+    {
+      "name": "De Telegraaf",
+      "url": "https://www.telegraaf.nl/"
+    },
+    {
+      "name": "Algemeen Dagblad",
+      "url": "https://www.ad.nl/"
+    }
+  ]
+}

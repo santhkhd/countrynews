@@ -1,0 +1,23 @@
+{
+  "name": "Cuba",
+  "code": "cu",
+  "slug": "cuba",
+  "newspapers": [
+    {
+      "name": "Granma",
+      "url": "https://www.granma.cu/"
+    },
+    {
+      "name": "Juventud Rebelde",
+      "url": "https://www.juventudrebelde.cu/"
+    },
+    {
+      "name": "Trabajadores",
+      "url": "https://www.trabajadores.cu/"
+    },
+    {
+      "name": "Prensa Latina",
+      "url": "https://www.prensa-latina.cu/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Mexico",
+  "code": "mx",
+  "slug": "mexico",
+  "newspapers": [
+    {
+      "name": "El Universal",
+      "url": "https://www.eluniversal.com.mx/"
+    },
+    {
+      "name": "Reforma",
+      "url": "https://www.reforma.com/"
+    },
+    {
+      "name": "Excélsior",
+      "url": "https://www.excelsior.com.mx/"
+    },
+    {
+      "name": "La Jornada",
+      "url": "https://www.jornada.com.mx/"
+    },
+    {
+      "name": "Milenio",
+      "url": "https://www.milenio.com/"
+    }
+  ]
+}

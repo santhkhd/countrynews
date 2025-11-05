@@ -1,0 +1,19 @@
+{
+  "name": "Singapore",
+  "code": "sg",
+  "slug": "singapore",
+  "newspapers": [
+    {
+      "name": "The Straits Times",
+      "url": "https://www.straitstimes.com/"
+    },
+    {
+      "name": "Today",
+      "url": "https://www.todayonline.com/"
+    },
+    {
+      "name": "Channel NewsAsia",
+      "url": "https://www.channelnewsasia.com/"
+    }
+  ]
+}

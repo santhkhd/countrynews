@@ -1,0 +1,27 @@
+{
+  "name": "Brazil",
+  "code": "br",
+  "slug": "brazil",
+  "newspapers": [
+    {
+      "name": "Folha de S.Paulo",
+      "url": "https://www.folha.uol.com.br/"
+    },
+    {
+      "name": "O Globo",
+      "url": "https://oglobo.globo.com/"
+    },
+    {
+      "name": "Estadão",
+      "url": "https://www.estadao.com.br/"
+    },
+    {
+      "name": "O Estado de S. Paulo",
+      "url": "https://www.estadao.com.br/"
+    },
+    {
+      "name": "Correio Braziliense",
+      "url": "https://www.correiobraziliense.com.br/"
+    }
+  ]
+}

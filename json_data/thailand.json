@@ -1,0 +1,23 @@
+{
+  "name": "Thailand",
+  "code": "th",
+  "slug": "thailand",
+  "newspapers": [
+    {
+      "name": "The Nation",
+      "url": "https://www.nationthailand.com/"
+    },
+    {
+      "name": "Bangkok Post",
+      "url": "https://www.bangkokpost.com/"
+    },
+    {
+      "name": "Thai Rath",
+      "url": "https://www.thairath.co.th/"
+    },
+    {
+      "name": "Matichon",
+      "url": "https://www.matichon.co.th/"
+    }
+  ]
+}

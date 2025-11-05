@@ -1,0 +1,27 @@
+{
+  "name": "United States",
+  "code": "us",
+  "slug": "united-states",
+  "newspapers": [
+    {
+      "name": "The New York Times",
+      "url": "https://www.nytimes.com/"
+    },
+    {
+      "name": "Washington Post",
+      "url": "https://www.washingtonpost.com/"
+    },
+    {
+      "name": "Wall Street Journal",
+      "url": "https://www.wsj.com/"
+    },
+    {
+      "name": "Los Angeles Times",
+      "url": "https://www.latimes.com/"
+    },
+    {
+      "name": "Chicago Tribune",
+      "url": "https://www.chicagotribune.com/"
+    }
+  ]
+}

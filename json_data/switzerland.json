@@ -1,0 +1,23 @@
+{
+  "name": "Switzerland",
+  "code": "ch",
+  "slug": "switzerland",
+  "newspapers": [
+    {
+      "name": "Neue Zürcher Zeitung",
+      "url": "https://www.nzz.ch/"
+    },
+    {
+      "name": "Tages-Anzeiger",
+      "url": "https://www.tagesanzeiger.ch/"
+    },
+    {
+      "name": "Le Temps",
+      "url": "https://www.letemps.ch/"
+    },
+    {
+      "name": "20 Minutes",
+      "url": "https://www.20minutes.ch/"
+    }
+  ]
+}

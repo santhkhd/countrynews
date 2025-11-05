@@ -1,0 +1,23 @@
+{
+  "name": "South Africa",
+  "code": "za",
+  "slug": "south-africa",
+  "newspapers": [
+    {
+      "name": "Mail & Guardian",
+      "url": "https://mg.co.za/"
+    },
+    {
+      "name": "The Citizen",
+      "url": "https://citizen.co.za/"
+    },
+    {
+      "name": "IOL",
+      "url": "https://www.iol.co.za/"
+    },
+    {
+      "name": "News24",
+      "url": "https://www.news24.com/"
+    }
+  ]
+}

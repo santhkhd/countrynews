@@ -1,0 +1,27 @@
+{
+  "name": "Canada",
+  "code": "ca",
+  "slug": "canada",
+  "newspapers": [
+    {
+      "name": "The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/"
+    },
+    {
+      "name": "Toronto Star",
+      "url": "https://www.thestar.com/"
+    },
+    {
+      "name": "National Post",
+      "url": "https://www.nationalpost.com/"
+    },
+    {
+      "name": "The Vancouver Sun",
+      "url": "https://vancouversun.com/"
+    },
+    {
+      "name": "Montreal Gazette",
+      "url": "https://montrealgazette.com/"
+    }
+  ]
+}

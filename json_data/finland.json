@@ -1,0 +1,23 @@
+{
+  "name": "Finland",
+  "code": "fi",
+  "slug": "finland",
+  "newspapers": [
+    {
+      "name": "Helsingin Sanomat",
+      "url": "https://www.hs.fi/"
+    },
+    {
+      "name": "Ilta-Sanomat",
+      "url": "https://www.is.fi/"
+    },
+    {
+      "name": "MTV Uutiset",
+      "url": "https://www.mtvuutiset.fi/"
+    },
+    {
+      "name": "YLE News",
+      "url": "https://yle.fi/uutiset"
+    }
+  ]
+}

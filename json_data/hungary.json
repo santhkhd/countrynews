@@ -1,0 +1,23 @@
+{
+  "name": "Hungary",
+  "code": "hu",
+  "slug": "hungary",
+  "newspapers": [
+    {
+      "name": "Népszabadság",
+      "url": "https://nol.hu/"
+    },
+    {
+      "name": "Magyar Nemzet",
+      "url": "https://magyarnemzet.hu/"
+    },
+    {
+      "name": "HVG",
+      "url": "https://hvg.hu/"
+    },
+    {
+      "name": "Népszava",
+      "url": "https://nepszava.hu/"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Algeria",
+  "code": "dz",
+  "slug": "algeria",
+  "newspapers": [
+    {
+      "name": "El Watan",
+      "url": "https://www.elwatan.com/"
+    },
+    {
+      "name": "Liberté",
+      "url": "https://www.liberte-algerie.com/"
+    },
+    {
+      "name": "El Khabar",
+      "url": "https://www.elkhabar.com/"
+    },
+    {
+      "name": "El Bilad",
+      "url": "https://www.elbilad.net/"
+    },
+    {
+      "name": "La Tribune",
+      "url": "https://www.latribune.dz/"
+    },
+    {
+      "name": "Le Quotidien d'Oran",
+      "url": "https://www.lequotidien-oran.com/"
+    }
+  ]
+}

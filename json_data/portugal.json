@@ -1,0 +1,23 @@
+{
+  "name": "Portugal",
+  "code": "pt",
+  "slug": "portugal",
+  "newspapers": [
+    {
+      "name": "Público",
+      "url": "https://www.publico.pt/"
+    },
+    {
+      "name": "Diário de Notícias",
+      "url": "https://www.dn.pt/"
+    },
+    {
+      "name": "Expresso",
+      "url": "https://expresso.pt/"
+    },
+    {
+      "name": "Jornal de Notícias",
+      "url": "https://jn.pt/"
+    }
+  ]
+}
